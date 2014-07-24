@@ -1,0 +1,12 @@
+{
+  "name": "node-webkit-testapp",
+  "version": "0.0.0",
+  "main": "index.html",
+  "window": {
+    "title": "node-webkit Test Application",
+    "toolbar": true
+  },
+  "webkit": {
+    "plugin": true
+  }
+}
