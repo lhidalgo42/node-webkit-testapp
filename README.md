@@ -21,6 +21,12 @@ My first app using node-webkit and [node-webkit-builder][1].
 
     gulp build
 
+*Note: if* `gulp` *command doesn't work, make sure to install gulp globally:*
+
+    npm install -g gulp
+
+*You might need to add * `sudo` *at beginning.*
+
 # Running the application
 
 The `gulp build` command downloads all required files inside `cache` folder.
