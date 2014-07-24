@@ -46,6 +46,13 @@ When build finishes, built applications appear in `build/node-webkit-testapp/`.
     - open `linux32/nw` or `linux64/nw`, respective to your platform
 
 
+If you get error like this:
+
+    libudev.so.0: cannot open shared object file: No such file or directory
+
+Try running following command inside terminal (tested for Ubuntu 14.04 x64):
+
+    sudo ln -sf /lib/x86_64-linux-gnu/libudev.so.1 /lib/x86_64-linux-gnu/libudev.so.0
 
 
   [1]: https://github.com/mllrsohn/node-webkit-builder
