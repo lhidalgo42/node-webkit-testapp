@@ -1,15 +1,21 @@
-var gulp = require("gulp");
+var gulp = require('gulp');
 var gutil = require('gulp-util');
-var nwBuilder = require("node-webkit-builder");
+var nwBuilder = require('node-webkit-builder');
 
-gulp.task("build", function() {
+// node-webkit-builder task
+gulp.task('build', function() {
   var nw = new nwBuilder({
+      // Version of node-webkit-builder to use
       version: '0.9.2',
-      files: [ './nwApp/**']
+      // Folder, containing the node-webkit app
+      files: [ './nwApp/**'],
+      // Target platforms
+      platforms: ['osx', 'win', 'linux32', 'linux64']
   });
 
+  // Register logging function
   nw.on('log', function (msg) {
-      gutil.log('node-webkit-builder', msg);
+      gutil.log('node-webkit-builder:', msg);
   });
 
   // Build returns a promise, return it so the task isn't called in parallel
@@ -18,5 +24,5 @@ gulp.task("build", function() {
   });
 });
 
-// add default gulp task as alias to build task
-gulp.task("default", ["build"]);
+// Add default gulp task as alias to build task
+gulp.task('default', ['build']);
