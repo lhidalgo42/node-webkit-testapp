@@ -23,14 +23,15 @@ My first app using node-webkit and [node-webkit-builder][1].
 
 # Running the application
 
-The build command downloads all required files inside `cache` folder.
+The `gulp build` command downloads all required files inside `cache` folder.
 
-When `build` command finishes, the application will be put into `build/node-webkit-testapp`. Applications are separated by target platform.
+When build finishes, built applications appear in `build/node-webkit-testapp/`.
+
 
 ### Running the application on different platforms:
 
   - **OS X**:
-    - open `osx/node-webkit`
+    - open `osx/node-webkit.app`
 
   - **Windows**:
     - open `win/nw.exe`
