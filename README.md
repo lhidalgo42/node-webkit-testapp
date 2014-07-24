@@ -1,9 +1,9 @@
 # node-webkit-testapp
 
-My first app using node-webkit and [node-webkit-builder][1].
+Obligatory hello world example app using node-webkit and [node-webkit-builder][1].
 
 
-# Building the application
+## Building the application
 
 #### 1. Clone this repository or download it as zip
 
@@ -27,7 +27,7 @@ My first app using node-webkit and [node-webkit-builder][1].
 
 *You might need to add * `sudo` *at beginning.*
 
-# Running the application
+## Running the application
 
 The `gulp build` command downloads all required files inside `cache` folder.
 
